@@ -10,9 +10,11 @@ Patches listed in [patches](./patches):
 * vertcenter
 * font2
 
-Uses [roboto-mono](https://www.archlinux.org/packages/community/any/ttf-roboto-mono/) as the base font.
+### Dependencies
 
-Added emoji support; requires [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) till thats merged into upstream libxft. I use [Noto Color Emoji](https://www.archlinux.org/packages/extra/any/noto-fonts-emoji/) as the `font2` fallback, but since the xft bug is fixed, most things should work.
+* [roboto-mono](https://www.archlinux.org/packages/community/any/ttf-roboto-mono/) as the base font.
+* [libx11](https://www.archlinux.org/packages/extra/x86_64/libx11/)
+* For emoji support; requires [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) till thats merged into upstream libxft. I use [Noto Color Emoji](https://www.archlinux.org/packages/extra/any/noto-fonts-emoji/) as the `font2` fallback, but since the xft bug is fixed, most emoji fonts should work.
 
 #### Custom Keybindings:
 
@@ -27,3 +29,16 @@ Key | Does
 `Ctrl + Shift + K`/`Ctrl + Shift + Up` | Scrolls screen up 1 line
 `Ctrl + Shift + J`/`Ctrl + Shift + Down` | Scrolls screen down 1 line
 
+
+#### Install
+
+clone, `make`, then `sudo make clean install`
+
+#### Sync changes from upstream:
+
+```
+git remote add upstream https://git.suckless.org/st
+git fetch upstream
+git checkout master
+git rebase upstream/master
+```
