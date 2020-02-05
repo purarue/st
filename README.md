@@ -10,7 +10,9 @@ Patches listed in [patches](./patches):
 * vertcenter
 * font2
 
-Added emoji support; requires [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) till thats merged into upstream libxft. I use Noto Color Emoji as the `font2` fallback, but most since the xft bug is fixed, most things should work.
+Uses [adobe-source-code-pro-font](https://www.archlinux.org/packages/extra/any/adobe-source-code-pro-fonts/) for the default font.
+
+Added emoji support; requires [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) till thats merged into upstream libxft. I use [Noto Color Emoji](https://www.archlinux.org/packages/extra/any/noto-fonts-emoji/) as the `font2` fallback, but most since the xft bug is fixed, most things should work.
 
 #### Custom Keybindings:
 
