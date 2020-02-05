@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro Medium:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Roboto Mono:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 static char *font2[] = { "Noto Color Emoji:pixelsize=16:antialias=true:autohint=true" };
