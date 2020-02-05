@@ -2,7 +2,15 @@
 
 My fork of [st](https://st.suckless.org/)
 
-Patches listed in [patches](./patches)
+Patches listed in [patches](./patches):
+
+* visualbell
+* scrollback
+* externalpipe
+* vertcenter
+* font2
+
+Added emoji support; requires [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) till thats merged into upstream libxft. I use Noto Color Emoji as the `font2` fallback, but most since the xft bug is fixed, most things should work.
 
 #### Custom Keybindings:
 
