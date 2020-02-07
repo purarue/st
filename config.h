@@ -189,6 +189,17 @@ static char *copyurlcmd[] = { "/bin/sh", "-c",
     "sed 's/.*│//g' | tr -d '\n' | grep -aEo '(((http|https)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./&%?#=_-]*)|((magnet:\\?xt=urn:btih:)[a-zA-Z0-9]*)' | uniq | sed 's/^www./http:\\/\\/www\\./g' | rofi -dmenu -i -p 'Copy which url? ' -l 10 | xargs -r echo -n | xclip -selection clipboard",
     "externalpipe", NULL };
 
+// prompts user to copy the command/output from a previous command
+static char *copylastoutput[] = { "/bin/sh", "-c",
+  "st-copylastoutput",
+  "externalpipe", NULL };
+
+
+// prompts user to copy the command from a previous command
+static char *copylastcmd[] = { "/bin/sh", "-c",
+  "st-copylastcmd",
+  "externalpipe", NULL };
+
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
@@ -212,6 +223,8 @@ static Shortcut shortcuts[] = {
 
  	{ MODKEY,               XK_u,           externalpipe,   {.v = openurlcmd } },
 	{ MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } },
+  { MODKEY,               XK_o,           externalpipe,   {.v = copylastoutput } },
+  { MODKEY,               XK_p,           externalpipe,   {.v = copylastcmd } },
 };
 
 /*
