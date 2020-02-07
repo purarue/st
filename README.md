@@ -24,11 +24,12 @@ Key | Does
 `Ctrl + Shift + Plus` | Zoom In
 `Ctrl + Shift + Minus` | Zoom Out
 `Ctrl + Shift + 0` | Reset Zoom
-`Shift + PageUp` | Scrolls a screen up
-`Shift + PageDown` | Scrolls a screen down
-`Ctrl + Shift + K`/`Ctrl + Shift + Up` | Scrolls screen up 1 line
-`Ctrl + Shift + J`/`Ctrl + Shift + Down` | Scrolls screen down 1 line
-
+`Alt + PageUp` | Scrolls a screen up
+`Alt + PageDown` | Scrolls a screen down
+`Alt + Up` | Scrolls screen up 1 line
+`Alt + Down` | Scrolls screen down 1 line
+`Alt + U` | Grabs any links on screen currently, prompts user to select one and opens it in the browser
+`Alt + Y` | Same as above, but copies the link to your clipboard
 
 #### Install
 
