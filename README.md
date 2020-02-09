@@ -22,7 +22,7 @@ Patches listed in [patches](./patches):
 
 Key | Does
 --- | ---
-`Shift + Mouse Scroll` | Scrolls
+`Mouse Scroll` | Scrolls
 `Ctrl + Shift + Plus` | Zoom In
 `Ctrl + Shift + Minus` | Zoom Out
 `Ctrl + Shift + 0` | Reset Zoom
