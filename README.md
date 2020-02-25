@@ -26,8 +26,8 @@ Key | Does
 `Ctrl + Shift + Plus` | Zoom In
 `Ctrl + Shift + Minus` | Zoom Out
 `Ctrl + Shift + 0` | Reset Zoom
-`Alt + PageUp`/`Alt + Shift + Up` | Scrolls a screen up
-`Alt + PageDown`/`Alt + Shift + Down` | Scrolls a screen down
+`Alt + PageUp`/`Ctrl + Shift + Up` | Scrolls a screen up
+`Alt + PageDown`/`Ctrl + Shift + Down` | Scrolls a screen down
 `Alt + Up` | Scrolls screen up 1 line
 `Alt + Down` | Scrolls screen down 1 line
 `Alt + U` | Grabs any links from the current terminal, prompts user to select one and opens it in the browser
