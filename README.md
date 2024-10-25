@@ -16,7 +16,7 @@ Patches listed in [patches](./patches):
 * [roboto-mono](https://www.archlinux.org/packages/community/any/ttf-roboto-mono/) as the base font.
 * [libx11](https://www.archlinux.org/packages/extra/x86_64/libx11/)
 * For emoji support; requires [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) till thats merged into upstream libxft. I use [Noto Color Emoji](https://www.archlinux.org/packages/extra/any/noto-fonts-emoji/) as the `font2` fallback, but since the xft bug is fixed, most emoji fonts should work.
-* [`st-copylast(cmd|output)`](https://github.com/seanbreckenridge/dotfiles/tree/master/.local/scripts/system). For `Alt+O`, `Alt+P`, externalpipe calls shell scripts which parse the output. Those have to be somewhere on your `$PATH`.
+* [`st-copylast(cmd|output)`](https://github.com/purarue/dotfiles/tree/master/.local/scripts/system). For `Alt+O`, `Alt+P`, externalpipe calls shell scripts which parse the output. Those have to be somewhere on your `$PATH`.
 
 #### Custom Keybindings:
 
